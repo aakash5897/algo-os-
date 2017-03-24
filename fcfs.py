@@ -1,4 +1,5 @@
 """implementing FIRST COME FIRST SERVE scheduling algorithm """
+__author__ = "Aakash"
 class FCFS:
 	def read(self):	
 		n=int(input("enter number of processes:"))
