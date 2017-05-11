@@ -6,9 +6,9 @@ class Dj:
 		self.v=[]
 		self._e=[]
 		self.get_data(dat)
-	@property
-	def infi(self):
-		return 999
+#	@property
+#	def infi(self):
+#		return 999
 	def get_data(self,val=None):
 		print("provide the data regarding the graph like the following:\n[(vertex_1,vertex_2,weight of the edge)] example:\n('a','b',4) which represents an edge connecting two vertices a,b(as strings) with weight 4")
 		l=eval(input())
