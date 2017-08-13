@@ -1,6 +1,6 @@
 # algos
 few algorithms written in Python.
-##USE CASE OF DIJKSTRA:
+## USE CASE OF DIJKSTRA:
   i=Dj()
   provide the data regarding the graph like the following:
   [(vertex_1,vertex_2,weight of the edge)] example:
