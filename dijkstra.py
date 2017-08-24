@@ -51,6 +51,11 @@ class Dj:
 		path=[s_v]+label[(s_v,d_v)][0]
 		dist=label[(s_v,d_v)][1]
 		return "Path:%s,Distance:%d"%(path,dist)
+if __name__ == "__main__":
+	i=Dj()
+	a=i.algo()
+	print(a)
+	
 
 		
 		
