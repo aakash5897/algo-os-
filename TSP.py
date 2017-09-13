@@ -14,18 +14,6 @@ class TSP:
 			for j in range(2):
 				if not i[j] in self.v:self.v.append(i[j])
 		self.res={(i[0],i[1]):i[2] for i in l}
-		self.func()
-	def func(self):
-		self.am=[[] for i in range(len(self.v))]
-		temp=self.v
-		for i in self.am:
-			for j in range(len(temp)):
-				if (temp[self.am.index(i)],temp[j]) in self.res:
-					i.append(self.res[(temp[self.am.index(i)],temp[j])])
-				elif (temp[j],temp[self.am.index(i)]) in self.res:
-					i.append(self.res[(temp[j],temp[self.am.index(i)])])					
-				else:i.append(0)
-		print(self.am)
 	def mak_sub(self,sub,l):
 		R=list(sub)
 		for i in range(len(R)):
@@ -38,8 +26,6 @@ class TSP:
 		try:return self.res[(li[0],li[1])]
 		except KeyError:return self.res[(li[1],li[0])]
 	def g(self,el,S):
-		#_s=S
-		#_s.update("1")
 		if S==set():return self.dist([el,"1"])
 		else:
 			for j in S:
